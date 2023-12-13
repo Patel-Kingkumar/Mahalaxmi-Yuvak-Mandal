@@ -1,0 +1,46 @@
+
+<div class="main">
+    <div class="footer">
+        <div class="image">
+            <img src="../../assets/images/hindulism.png" alt="">
+        </div>
+        <div class="contact-us">
+            <div>
+                <h3>Contact Us</h3>
+            </div>
+            <div class="contact-info" *ngFor="let item of contactInfo">
+                <i class="{{ item.icon }}"></i>
+                <label>{{ item.label }}</label>
+            </div>
+        </div>
+        <!-- <div class="main-links">
+            <div>
+                <h3>Main Link</h3>
+            </div>
+            <div *ngFor="let item of mainInfo">
+                <a href="#">{{ item }}</a>
+            </div>
+        </div> -->
+        <div class="more-info">
+            <div>
+                <h3>More Info</h3>
+            </div>
+            <div *ngFor="let item of moreInfo">
+                <a href="#">{{ item }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="reserve">
+        <div class="reserve-items">
+
+            <div class="icons" *ngFor="let item of reserveIcon">
+                <a href="#">
+                    <i class="{{ item }}"></i>
+                </a>
+            </div>
+        </div>
+        <div>© 2023 King. All rights reserved</div>
+        <!-- <div>Opash</div> -->
+        <button (click)="scrollToTop()">↑</button>
+    </div>
+</div>

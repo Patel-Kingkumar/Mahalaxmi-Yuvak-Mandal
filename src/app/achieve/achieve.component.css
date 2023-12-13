@@ -1,0 +1,130 @@
+
+
+.parallax-one {
+    background-image: url("https://media.istockphoto.com/id/504122496/photo/angkor-wat.webp?b=1&s=170667a&w=0&k=20&c=y6wV_MnWz0LkD_ACE6zVp-U_D2rXBRNCcLwCDn_NQOU=");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-inner {
+    text-align: center;
+    padding: 10% 0;
+    color: white;
+    button {
+        line-height: 2.5;
+        background: red;
+        color: white;
+        border: 1px solid red;
+        font-weight: 500;
+      }
+      button:hover {
+        background-color: #ff701a;
+        color: white;
+        border: 1px solid #ff701a;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+      }
+
+}
+
+  .nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+
+  .content {    
+    text-align: center;
+    padding: 5% 0;
+    .review-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+        /* :hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 1px solid yellow;
+        } */
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 25%;
+        border: 1px solid red;      
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .community-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .community-data {
+            width: 25%;
+            padding: 30px;
+            border: 1px solid yellow;
+        }
+    }
+}
+
+.parallax-two {
+    background-image: url("https://w0.peakpx.com/wallpaper/989/660/HD-wallpaper-storey-structure-with-nagara-style-architecture-this-is-what-ayodhya-s-ram-temple-will-look-like-ram-mandir-thumbnail.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+  
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .review-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 25px;
+        border: 1px solid yellow;
+    }
+    .reviews { 
+        width: 80% !important;
+    }
+    .community {       
+        .community-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            .community-data {
+                width: 50%;
+                text-align: center;
+                padding: 30px;
+                border: 1px solid rgb(102, 255, 0);
+            }
+        }
+    }
+}

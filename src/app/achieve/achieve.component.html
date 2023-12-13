@@ -1,0 +1,51 @@
+<section class="parallax-one">   
+    <div class="parallax-inner">
+        <h3>HELPING YOU ACHIEVE HARMONY</h3>
+        <p>Our website works to provide you with any information and resources on Hinduism to help Read more about it and achieve inner harmony.</p>
+        <button class="btn btn-outline-primary">View More</button>
+    </div>
+</section>
+<div class="content">
+    <div class="text-center waviy">
+        <span style="--i:1">W</span>
+        <span style="--i:2">h</span>
+        <span style="--i:3">a</span>
+        <span style="--i:4">t</span>
+        <span style="--i:5">&nbsp;</span>
+        <span style="--i:6">P</span>
+        <span style="--i:7">e</span>
+        <span style="--i:8">o</span>
+        <span style="--i:9">p</span>
+        <span style="--i:10">l</span>
+        <span style="--i:11">e</span>
+        <span style="--i:12">&nbsp;</span>
+        <span style="--i:13">S</span>
+        <span style="--i:14">a</span>
+        <span style="--i:15">y</span>
+    </div>
+    <div class="review-card">
+        <div class="reviews" *ngFor="let item of reviews">        
+            <img src="{{ item.image }}" alt="">        
+            <div>{{ item.decsription }}</div>
+            <div>{{ item.name }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="community">
+    <h3 class="text-center">BE A PART OF OUR COMMUNITY</h3>
+    <div class="community-card">
+        <div class="community-data" *ngFor="let item of community">
+            <h1>{{ item.heading }}</h1>
+            <p>{{ item.text }}</p>
+        </div>
+    </div>
+</div>
+
+<section class="parallax-two">   
+    <div class="parallax-inner">
+        <h3>STAY INFORMED</h3>
+        <p>Subscribe to our newsletter to be informed of all news, events, meetings, and live discussions happening on our website.</p>
+        <button class="btn btn-outline-primary">View More</button>
+    </div>
+</section>

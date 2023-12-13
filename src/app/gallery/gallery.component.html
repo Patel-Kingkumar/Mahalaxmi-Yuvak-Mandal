@@ -1,0 +1,33 @@
+<div class="main">
+
+    <div class="text-center waviy">
+        <span style="--i:1">O</span>
+        <span style="--i:2">u</span>
+        <span style="--i:3">r</span>
+        <span style="--i:4">&nbsp;</span>
+        <span style="--i:5">G</span>
+        <span style="--i:6">a</span>
+        <span style="--i:7">l</span>
+        <span style="--i:8">l</span>
+        <span style="--i:9">e</span>
+        <span style="--i:10">r</span>
+        <span style="--i:11">y</span>
+    </div>
+
+    <div class="filter-img">
+        <div class="year" *ngFor="let item of years">
+            <button class="btn btn-outline-primary" value="{{ item }}" (click)="onItemSelector(item)">{{ item }}</button>         
+        </div>
+    </div>
+    <div class="disp-images">
+        <div class="container">
+
+            <div *ngFor="let item of filterImages">
+                <img src="{{ item }}" class="lineUp" alt="">  
+            </div>
+        </div>
+    </div>
+
+    <div>
+    </div>
+</div>

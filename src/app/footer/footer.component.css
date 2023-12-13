@@ -1,0 +1,123 @@
+.main {
+  background-color: #061030;
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 75px;
+
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+      .contact-info {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+      }
+    }
+
+    /* .main-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ff6600;
+      }
+    } */
+
+    .more-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ff6600;
+      }
+    }
+  }
+
+  .reserve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #030a20;
+    padding: 25px 0;
+    .reserve-items {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;  
+      a {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+        color: white;
+        float: left;
+        text-align: center;
+        line-height: 47px;
+        font-size: 24px;
+      }    
+      
+        a:hover {
+          transition: all .3s ease-in;
+          background-color:#ff6600
+        }
+      
+    }
+    button {
+      width: 50px;
+      height: 50px;
+      background-color: #ff6600;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      border: 0;
+    }
+    button:hover {
+      transition: all .3s ease-in;
+      color: #ff6600;
+      background-color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 686px) {
+  
+  .reserve {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px;
+    
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px;   
+    .contact-us {
+      text-align: center;
+    } 
+  }
+}

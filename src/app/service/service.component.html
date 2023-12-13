@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="container">
+
+        <div class="text-center waviy">
+            <span style="--i:1">O</span>
+            <span style="--i:2">u</span>
+            <span style="--i:3">r</span>
+            <span style="--i:4">&nbsp;</span>
+            <span style="--i:5">S</span>
+            <span style="--i:6">e</span>
+            <span style="--i:7">r</span>
+            <span style="--i:8">v</span>
+            <span style="--i:9">i</span>
+            <span style="--i:10">c</span>
+            <span style="--i:11">e</span>
+            <span style="--i:11">s</span>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <div class="service-data">
+                    <div class="cards" *ngFor="let item of service; index as i">
+                        <div class="cards-head">
+                            <img src="{{ item.images }}" alt="not">
+                            <span>0{{ i + 1 }}</span>
+                        </div>
+                        <h3>{{ item.text }}</h3>
+                        <p>{{ item.decsription }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <img
+                src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" class="service-side"> -->
+
+                
+            <iframe src="../../assets/images/Quiz - Google Chrome 2023-12-07 18-44-24.mp4" class="service-side">
+            </iframe>
+        </div>
+    </div>
+</div>
