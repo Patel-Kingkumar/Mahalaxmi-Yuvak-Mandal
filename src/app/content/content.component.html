@@ -5,7 +5,7 @@
         <div class="carousel-content">
             <h3 class="lineUp">Discover hinduism</h3>
             <h1 class="lineUp">The Power of Beliefs</h1>
-            <button class="btn btn-danger lineUp">Get In Touch</button>
+            <button class="btn btn-danger lineUp btn-touch">Get In Touch</button>
         </div>
     </div>
       <div class="carousel-item">
@@ -13,7 +13,7 @@
         <div class="carousel-content">
             <h3 class="lineUp">Helping Every Hinduist</h3>
             <h1 class="lineUp">Support of hinduism community</h1>
-            <button class="btn btn-danger lineUp">Get In Touch</button>
+            <button class="btn btn-danger lineUp btn-touch">Get In Touch</button>
         </div>
     </div>
       <div class="carousel-item">
@@ -21,18 +21,18 @@
         <div class="carousel-content">
             <h3 class="lineUp">Know More to Become More</h3>
             <h1 class="lineUp">Rituals and Practices of Hinduism</h1>
-            <button class="btn btn-danger lineUp">Get In Touch</button>
+            <button class="btn btn-danger lineUp btn-touch">Get In Touch</button>
         </div>
     </div>
     </div>
   </div>
-  <div class="main-contents" style="background-color: aqua;">
+  <div class="main-contents">
 
       <div class="container">
-          
+
           <div class="contents">
               <div class="content-data">
-                  <div class="content-cards" *ngFor="let item of service; index as i">                        
+                  <div class="content-cards" *ngFor="let item of service; index as i">
                     <h3>{{ item.text }}</h3>
                     <ul *ngFor="let list_item of item.decsription">
                         <li>{{ list_item }}</li>

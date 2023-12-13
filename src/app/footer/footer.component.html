@@ -26,7 +26,7 @@
                 <h3>More Info</h3>
             </div>
             <div *ngFor="let item of moreInfo">
-                <a href="#">{{ item }}</a>
+                <a href="#" class="more-link">{{ item }}</a>
             </div>
         </div>
     </div>
@@ -34,13 +34,13 @@
         <div class="reserve-items">
 
             <div class="icons" *ngFor="let item of reserveIcon">
-                <a href="#">
+                <a href="#" class="icon-link">
                     <i class="{{ item }}"></i>
                 </a>
             </div>
         </div>
         <div>© 2023 King. All rights reserved</div>
         <!-- <div>Opash</div> -->
-        <button (click)="scrollToTop()">↑</button>
+        <button (click)="scrollToTop()" class="btn-top">↑</button>
     </div>
 </div>

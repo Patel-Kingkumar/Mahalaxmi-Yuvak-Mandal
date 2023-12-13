@@ -10,7 +10,7 @@
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
-    
+
   }
   @keyframes waviy {
     0%,40%,100% {
@@ -43,12 +43,6 @@
         }
       }
     }
-    .service-side {
-      width: 45%;
-      max-height: 300px;
-      height: 300px;
-      border: 1px solid blue;
-    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -70,17 +64,14 @@
           width: 80%;
           border: 1px solid orange;
         }
-        
+
       }
-    }
-    .service-side {      
-      width: 100% !important;
     }
   }
   /* .cards-head:hover {
     transform: rotate(1deg);
   }
-  
+
   .cards-head:hover image {
     transform: rotate(-1deg);
   } */

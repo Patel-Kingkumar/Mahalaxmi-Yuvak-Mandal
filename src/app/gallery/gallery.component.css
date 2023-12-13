@@ -12,19 +12,18 @@
   }
   @keyframes flip {
     0%,80% {
-      transform: rotateY(360deg) 
+      transform: rotateY(360deg)
     }
 }
 
 .filter-img {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
 .disp-images {
   .container {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,6 +40,10 @@
 
 
 .lineUp {
+  width: 250px;
+  max-height: 200px;
+  object-fit: cover;
+
   animation: 3s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {
@@ -69,7 +72,7 @@
     align-items: center;
     flex-wrap: wrap;
     border: 1px solid yellow;
-    img {      
+    img {
       max-height: 300px;
       height: 300px;
     }

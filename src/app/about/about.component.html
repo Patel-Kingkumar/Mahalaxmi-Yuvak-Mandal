@@ -19,14 +19,14 @@
                 </div>
                 <div id="exTab1" class="heading">
                     <div class="nav nav-pills" *ngFor="let item of heading">
-                        <a href="#1a" data-toggle="tab" (click)="onItemSelector(item)">{{ item }}</a>
-                    </div>                    
+                        <a href="#1a" class="pills-link" data-toggle="tab" (click)="onItemSelector(item)">{{ item }}</a>
+                    </div>
                 </div>
                 <div class="tab-content clearfix">
                     <div class="tab-pane active" id="1a">
                         <p>{{ text }}</p>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="btns">
