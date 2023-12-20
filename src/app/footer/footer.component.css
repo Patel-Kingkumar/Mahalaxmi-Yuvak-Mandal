@@ -105,6 +105,13 @@
   }
 }
 
+@media only screen and (max-width: 780px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .footer {
     display: flex !important;
