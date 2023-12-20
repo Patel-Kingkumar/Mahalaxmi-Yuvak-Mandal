@@ -21,10 +21,17 @@ export class GalleryComponent implements OnInit{
   ];
 
   images_2023: any = [
-    "assets/images/meeting_one.jpg",
-    "assets/images/meeting_two.jpg",
-    "assets/images/event_one.jpg",
-    "assets/images/event_two.jpg"
+    "assets/images/2023/salgiri_one.jpg",
+    "assets/images/2023/salgiri_two.jpg",
+    "assets/images/2023/salgiri_three.jpg",
+    "assets/images/2023/ganeshchaturthi_one.jpg",
+    "assets/images/2023/ganeshchaturthi_two.jpg",
+    "assets/images/2023/ganeshchaturthi_three.jpg",
+    "assets/images/2023/navaratri_one.jpg",
+    "assets/images/2023/navaratri_two.jpg",
+    "assets/images/2023/navaratri_three.jpg",
+
+
   ];
 
   images_2022: any = [
