@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit{
 
-  years: any = ["all", "a", "b", "c"];
+  years: any = ["All", "2023", "2022", "2021"];
   select: any = "all";
   filterImages: any = "";
 
@@ -20,19 +20,19 @@ export class GalleryComponent implements OnInit{
     "assets/images/symbol_two.jpg"
   ];
 
-  aimages: any = [
+  images_2023: any = [
     "assets/images/meeting_one.jpg",
     "assets/images/meeting_two.jpg",
     "assets/images/event_one.jpg",
     "assets/images/event_two.jpg"
   ];
 
-  bimages: any = [
+  images_2022: any = [
     "assets/images/meeting_one.jpg",
     "assets/images/meeting_two.jpg"
   ];
 
-  cimages: any = [
+  images_2021: any = [
     "assets/images/symbol_one.jpg",
     "assets/images/symbol_two.jpg"
   ];
@@ -46,12 +46,12 @@ export class GalleryComponent implements OnInit{
 
   onItemSelector(value: any) {
     this.select =  value;
-    if (this.select == "a") {
-      this.filterImages = this.aimages;
-    } else if (this.select == "b") {
-      this.filterImages = this.bimages;
-    } else if (this.select == "c") {
-      this.filterImages = this.cimages;
+    if (this.select == "2023") {
+      this.filterImages = this.images_2023;
+    } else if (this.select == "2022") {
+      this.filterImages = this.images_2022;
+    } else if (this.select == "2021") {
+      this.filterImages = this.images_2021;
     } else {
       this.filterImages = this.allimages
     }

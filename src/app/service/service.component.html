@@ -1,36 +1,5 @@
-<div class="main">
-    <div class="container">
-
-        <div class="text-center waviy">
-            <span style="--i:1">O</span>
-            <span style="--i:2">u</span>
-            <span style="--i:3">r</span>
-            <span style="--i:4">&nbsp;</span>
-            <span style="--i:5">S</span>
-            <span style="--i:6">e</span>
-            <span style="--i:7">r</span>
-            <span style="--i:8">v</span>
-            <span style="--i:9">i</span>
-            <span style="--i:10">c</span>
-            <span style="--i:11">e</span>
-            <span style="--i:11">s</span>
-        </div>
-
-        <div class="services">
-            <div class="service">
-                <div class="service-data">
-                    <div class="cards" *ngFor="let item of service; index as i">
-                        <div class="cards-head">
-                            <img src="{{ item.images }}" alt="not">
-                            <span>0{{ i + 1 }}</span>
-                        </div>
-                        <h3>{{ item.text }}</h3>
-                        <p>{{ item.decsription }}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- <iframe src="../../assets/videos/salgiri_2023.mp4" class="service-side">
-            </iframe> -->
-        </div>
-    </div>
+<div class="remoteVideo-container">
+  <video class="remoteVideo" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" poster="../../assets/videos/salgiri_2023.mp4">
+    <source  src="../../assets/videos/ganeshchaturhti_2023.mp4" type="video/mp4" />
+  </video>
 </div>

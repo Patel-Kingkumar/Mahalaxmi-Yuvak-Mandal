@@ -1,7 +1,7 @@
 
 
 .parallax-one {
-    background-image: url("https://media.istockphoto.com/id/504122496/photo/angkor-wat.webp?b=1&s=170667a&w=0&k=20&c=y6wV_MnWz0LkD_ACE6zVp-U_D2rXBRNCcLwCDn_NQOU=");
+    background-image: url("../../assets/images/mahalaxmi_maa.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -87,7 +87,7 @@
 }
 
 .parallax-two {
-    background-image: url("https://w0.peakpx.com/wallpaper/989/660/HD-wallpaper-storey-structure-with-nagara-style-architecture-this-is-what-ayodhya-s-ram-temple-will-look-like-ram-mandir-thumbnail.jpg");
+    background-image: url("../../assets/images/ganapati_bappa.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
