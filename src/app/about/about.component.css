@@ -39,7 +39,7 @@
                       text-decoration: none;
                     }
                     a:hover {
-                        color: #ff701a;
+                      color: #ff701a;
                     }
                 }
             }
@@ -122,6 +122,14 @@
             .waviy {
                 text-align: center;
             }
+            .ganpatibappa-img {
+            .img {
+                width: 280px;
+                max-height: 300px;
+                height: 300px;
+                border: 1px solid blue;
+            }
+        }
         }
     }
 }

@@ -44,7 +44,7 @@
   width: 270px;
   max-height: 280px;
   object-fit: fill;
-
+  border-radius: 10px;
   animation: 3s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {

@@ -1,4 +1,4 @@
-
+/*
 a {
     text-decoration: none;
 }
@@ -94,4 +94,36 @@ i {
     .menu-icon i {
         font-size: 1.7em;
     }
+} */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  line-height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #303030;
+
+  .brand {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 0 0 5%;
+  }
+  .text {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .brand {
+    width: 80px !important;
+    height: 80px !important;
+  }
 }
