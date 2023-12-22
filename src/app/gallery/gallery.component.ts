@@ -10,6 +10,8 @@ export class GalleryComponent implements OnInit{
   years: any = ["All", "2023", "2022", "2021"];
   select: any = "all";
   filterImages: any = "";
+  length = 3;
+  hideBtn: boolean = true;
 
   allimages: any = [
     "assets/images/event_one.jpg",
@@ -61,6 +63,15 @@ export class GalleryComponent implements OnInit{
       this.filterImages = this.images_2021;
     } else {
       this.filterImages = this.allimages
+    }
+  }
+
+  loadMore(len: number) {
+    this.length += 2;
+    console.log('filterImages  : ', this.filterImages.length);
+    console.log('len  : ', this.length);
+    if (this.length == this.filterImages.length) {
+      this.hideBtn = false;
     }
   }
 }

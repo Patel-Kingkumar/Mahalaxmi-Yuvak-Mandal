@@ -56,12 +56,14 @@
         } */
     }
     .reviews {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        width: 25%;
-        border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 250px;
+      width: 25%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
         .review-img {
           width: 100px;
           max-height: 200px;
@@ -78,10 +80,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         .community-data {
             width: 25%;
             padding: 30px;
-            border: 1px solid yellow;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
 }

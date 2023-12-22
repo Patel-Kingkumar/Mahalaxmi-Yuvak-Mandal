@@ -16,14 +16,20 @@
 
     <div class="filter-img">
         <div class="year" *ngFor="let item of years">
-            <button class="btn btn-outline-primary" value="{{ item }}" (click)="onItemSelector(item)">{{ item }}</button>         
+            <button class="btn btn-outline-primary" value="{{ item }}" (click)="onItemSelector(item)">{{ item }}</button>
         </div>
     </div>
     <div class="disp-images">
         <div class="container">
 
-            <div *ngFor="let item of filterImages">
-                <img src="{{ item }}" class="lineUp" alt="">  
+            <div *ngFor="let item of filterImages; let i = index">
+
+              <img *ngIf="i < length || i > item.length - length" src="{{ item }}" class="lineUp" alt="">
+              <div class="load-more-btn">
+                <button class="btn btn-outline-primary" *ngIf="i === length - 1 && hideBtn" (click)="loadMore(i)">
+                  Load more
+                </button>
+              </div>
             </div>
         </div>
     </div>
