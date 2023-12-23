@@ -117,6 +117,7 @@ header {
     a {
       color: white;
       text-decoration: none;
+      border-bottom: 3px solid white;
     }
   }
 }
