@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
+
   service: any = [
     {
       text: "Typology", decsription: [
@@ -30,6 +31,6 @@ export class ContentComponent {
         "Exit the Chain of Rebirths",
         "Ataman-Jan"
       ]
-    }    
+    }
   ]
 }

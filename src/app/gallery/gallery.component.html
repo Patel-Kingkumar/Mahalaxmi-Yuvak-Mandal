@@ -25,9 +25,9 @@
             <div *ngFor="let item of filterImages; let i = index">
 
               <img *ngIf="i < length || i > item.length - length" src="{{ item }}" class="lineUp" alt="">
-              <div class="load-more-btn">
+              <div class="more-images-btn">
                 <button class="btn btn-outline-primary" *ngIf="i === length - 1 && hideBtn" (click)="loadMore(i)">
-                  Load more
+                  More Images
                 </button>
               </div>
             </div>
