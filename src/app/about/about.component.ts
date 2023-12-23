@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  heading: any = ["Who we are", "Founders", "Missions",];
+  heading: any = ["Identity", "Founders", "Missions",];
   description: any = [
     "We are one of the leading Hinduism websites on the Web offering you both essential and detailed information as well as news from the world of this religion.",
     "Our organization was established by some of the most prominent persons in the Hindu world. They were and still are the core people of our organization and the website itself.",
@@ -17,13 +17,13 @@ export class AboutComponent {
 
   constructor() { }
 
-  onItemSelector(value: any) {    
-    if (value == "Who we are") {
+  onItemSelector(value: any) {
+    if (value == "Identity") {
       this.text = this.description[0];
     } else if (value == "Founders") {
       this.text = this.description[1];
     } else if (value == "Missions") {
       this.text = this.description[2];
-    } 
+    }
   }
 }

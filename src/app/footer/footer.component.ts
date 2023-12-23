@@ -16,7 +16,12 @@ export class FooterComponent {
 
   // mainInfo: any = ["Cultural Services", "Hinduism Facts", "Meetings", "Events", "Blog"];
 
-  moreInfo: any = ["Photo Gallery", "Trust Members", "Help"];
+  moreInfo: any = [
+    { name: 'Home', redirect: 'home' },
+    { name: 'Gallery', redirect: 'gallery' },
+    { name: 'Community', redirect: 'community' },
+    { name: 'Upcoming Events', redirect: 'upcoming' },
+  ];
 
   reserveIcon: any = ["fa-brands fa-facebook-f", "fa-brands fa-twitter", "fa-brands fa-instagram", "fa-brands fa-whatsapp"];
 

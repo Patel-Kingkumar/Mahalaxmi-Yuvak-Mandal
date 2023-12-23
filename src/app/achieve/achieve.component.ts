@@ -14,8 +14,8 @@ export class AchieveComponent {
   ]
 
   community: any = [
-    { heading: "210", text: "MEETINGS HELD" },
-    { heading: "19k", text: "REGULAR VISITORS" },
-    { heading: "25", text: "TEAM MEMBERS" },
+    { heading: "10", text: "MEETINGS HELD" },
+    { heading: "20k", text: "REGULAR VISITORS" },
+    { heading: "30", text: "TEAM MEMBERS" },
   ]
 }

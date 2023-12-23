@@ -66,7 +66,6 @@
             flex-wrap: wrap;
             align-items: center;
             width: 80% !important;
-            border: 1px solid rgb(0, 255, 234) !important;
             gap: 25px;
             img {
                 width: 100%;

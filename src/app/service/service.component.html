@@ -1,6 +1,18 @@
-<div class="remoteVideo-container">
-  <video class="remoteVideo" loop muted autoplay oncanplay="this.play()"
-    onloadedmetadata="this.muted = true" poster="../../assets/videos/salgiri_2023.mp4">
-    <source src="../../assets/videos/salgiri_2023.mp4" type="video/mp4" />
-  </video>
+<div class="main">
+  <div class="container">
+    <h3 class="text-center">OUR SERVICES</h3>
+    <div class="services">
+      <div class="service">
+        <div class="service-data">
+          <div class="cards" *ngFor="let item of service; index as i">
+            <div class="cards-head">
+              <h3>{{ item.text }}</h3>
+            </div>
+            <h3>0{{ i + 1 }}</h3>
+            <p>{{ item.decsription }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

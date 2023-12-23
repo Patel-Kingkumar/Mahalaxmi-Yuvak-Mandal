@@ -6,7 +6,7 @@
         </div>
         <div class="contact-us">
             <div>
-                <h3>Contact Us</h3>
+                <h3>CONTACT US</h3>
             </div>
             <div class="contact-info" *ngFor="let item of contactInfo">
                 <i class="{{ item.icon }}"></i>
@@ -23,10 +23,10 @@
         </div> -->
         <div class="more-info">
             <div>
-                <h3>More Info</h3>
+                <h3>MORE LINKS</h3>
             </div>
             <div *ngFor="let item of moreInfo">
-                <a href="#" class="more-link">{{ item }}</a>
+                <a href="#{{ item.redirect }}" class="more-link">{{ item.name }}</a>
             </div>
         </div>
     </div>
