@@ -39,14 +39,19 @@
   }
 }
 
-
 .lineUp {
   width: 270px;
   max-height: 280px;
   object-fit: fill;
   border-radius: 10px;
   animation: 3s anim-lineUp ease-out;
+  transform: scale(1);
 }
+
+.lineUp:hover {
+  transform: scale(1.110);
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;

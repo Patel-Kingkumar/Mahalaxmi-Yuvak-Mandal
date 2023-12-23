@@ -27,7 +27,7 @@
       }
 
 }
-.view-more {
+/* .view-more {
   width: 130px;
   border: 1px solid white;
   color: white;
@@ -36,7 +36,7 @@
   background-color: #ff701a;
   color: white;
   border: 1px solid #ff701a;
-}
+} */
   .nav * {
     box-sizing: border-box;
     transition: all .35s ease;
@@ -70,7 +70,11 @@
           object-fit: cover;
         }
     }
-}
+  }
+  .reviews:hover, .community-data:hover {
+    background-color: #ff701a;
+    color: white;
+  }
 
 .community {
     display: flex;

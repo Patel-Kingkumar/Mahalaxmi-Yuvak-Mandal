@@ -28,6 +28,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
+.content-cards:hover {
+  background-color: #ff701a;
+  color: white;
+}
 
 .carousel-content {
   display: flex;
