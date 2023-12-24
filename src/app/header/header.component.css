@@ -108,6 +108,7 @@ header {
   background-color: #303030;
 
   .brand {
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     float: left;

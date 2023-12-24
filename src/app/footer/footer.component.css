@@ -6,7 +6,11 @@
     flex-direction: row;
     justify-content: space-around;
     padding-block: 75px;
-
+    .logo-img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
     .contact-us {
       display: flex;
       flex-direction: column;

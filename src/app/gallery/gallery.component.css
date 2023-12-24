@@ -30,10 +30,6 @@
   transform: scale(1);
 }
 
-.lineUp:hover {
-  transform: scale(1.110);
-}
-
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
