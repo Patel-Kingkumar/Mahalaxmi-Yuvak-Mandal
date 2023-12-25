@@ -1,8 +1,11 @@
-.filter-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+.main {
+  margin-top: 50px;
+  .filter-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
 
 .disp-images {
   .container {
@@ -11,6 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin-top: 30px;
     img {
       max-width: 100%;
       height: 300px;
@@ -18,9 +22,13 @@
       max-height: 300px;
       height: 300px; */
     }
+    .more-images-btn {
+      margin-top: 30px;
+    }
   }
 }
 
+}
 .lineUp {
   width: 270px;
   max-height: 280px;

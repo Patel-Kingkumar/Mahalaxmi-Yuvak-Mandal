@@ -1,8 +1,13 @@
-.services {
-  display: flex;
+
+.main {
+  margin-top: 50px;
+  .services {
+    display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  margin-top: 30px;
+
   .service-data {
     display: flex;
     flex-direction: row;
@@ -27,6 +32,7 @@
     .cards:hover {
       background-color: #ff701a;
       color: white;
+    }
     }
   }
 }

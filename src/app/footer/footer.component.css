@@ -1,6 +1,6 @@
 .main {
   background-color: #061030;
-
+  margin-top: 50px;
   .footer {
     display: flex;
     flex-direction: row;
