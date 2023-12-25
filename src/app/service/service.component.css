@@ -45,15 +45,15 @@
     gap: 25px;
     border: 1px solid blue;
     .service-data {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !;
       align-items: center;
       border: 1px solid red;
       .cards {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 80% !important;
         border: 1px solid orange;
       }
 

@@ -11,5 +11,10 @@ import { scan, takeWhile, tap } from 'rxjs';
 export class AppComponent {
   title = 'website';
 
-  
+  constructor(@Inject(DOCUMENT) private dom: Document) { }
+
+  scrollToTop() {
+    this.dom.body.scrollTop = 0;
+    this.dom.documentElement.scrollTop = 0;
+  }
 }

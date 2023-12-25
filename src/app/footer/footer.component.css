@@ -79,22 +79,6 @@
         }
 
     }
-    .btn-top {
-      width: 50px;
-      height: 50px;
-      background-color: #ff6600;
-      line-height: 35px;
-      text-align: center;
-      color: white;
-      font-size: 24px;
-      border-radius: 50%;
-      border: 0;
-    }
-    button:hover {
-      transition: all .3s ease-in;
-      color: #ff6600;
-      background-color: white;
-    }
   }
 }
 
