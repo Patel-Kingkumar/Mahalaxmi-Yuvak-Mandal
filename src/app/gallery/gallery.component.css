@@ -27,7 +27,22 @@
     }
   }
 }
+.year-btn, .img-btn:hover {
+  min-width: 10vw;
+  line-height: 3;
+  border: 1px solid white;
+  color: white;
+  background-color: #ff701a;
+}
 
+.year-btn:hover, .img-btn {
+  min-width: 10vw;
+  line-height: 3;
+  color: #151515;
+  background-color: white;
+  border: 1px solid black;
+  transition: all .3s ease-in-out;
+}
 }
 .lineUp {
   width: 270px;

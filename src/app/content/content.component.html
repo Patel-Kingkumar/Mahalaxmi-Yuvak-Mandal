@@ -53,7 +53,7 @@
         <div class="contents">
             <div class="content-data">
                 <div class="content-cards" *ngFor="let item of service; index as i">
-                  <h3>{{ item.text }}</h3>
+                  <h3 class="text-center">{{ item.text }}</h3>
                   <ul *ngFor="let list_item of item.decsription">
                       <li>{{ list_item }}</li>
                   </ul>

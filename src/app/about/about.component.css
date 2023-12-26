@@ -35,70 +35,22 @@
 
                 }
             }
-
-            .btns {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                .touch {
-                    line-height: 3;
-                    background: #ff701a;
-                    border-color: #151515;
-                    color: white;
-                    border: 1px solid white;
-                    font-weight: 500;
-                }
-                .more {
-                    line-height: 3;
-                    color: #151515;
-                    background-color: white;
-                    font-weight: 500;
-                    border: 1px solid black;
-                }
-                .touch:hover {
-                    border: 1px solid black;
-                    color: black;
-                    background-color: white;
-                    transition: all .3s ease-in-out;
-                }
-                .more:hover {
-                    border: 1px solid white;
-                    color: white;
-                    background-color: #ff701a;
-                    transition: all .3s ease-in-out;
-                }
-            }
         }
     }
 }
-
-.waviy {
-    position: relative;
-    /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2)); */
-    font-size: 40px;
+.pills-link {
+  line-height: 3;
+  border: 1px solid white;
+  color: white;
+  background-color: #ff701a;
 }
 
-.waviy span {
-    position: relative;
-    display: inline-block;
-    color: black;
-    text-transform: uppercase;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i));
-
-}
-
-@keyframes waviy {
-
-    0%,
-    40%,
-    100% {
-        transform: translateY(0)
-    }
-
-    20% {
-        transform: translateY(-20px)
-    }
+.pills-link:hover {
+  line-height: 3;
+  color: #151515;
+  background-color: white;
+  border: 1px solid black;
+  transition: all .3s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {

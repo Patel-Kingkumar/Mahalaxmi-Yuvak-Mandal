@@ -10,7 +10,10 @@
             </div>
             <div class="contact-info" *ngFor="let item of contactInfo">
                 <i class="{{ item.icon }}"></i>
-                <label>{{ item.label }}</label>
+                <div class="time">
+                  <label>{{ item.label }}</label>
+                  <label>{{ item.label_two }}</label>
+                </div>
             </div>
         </div>
         <!-- <div class="main-links">

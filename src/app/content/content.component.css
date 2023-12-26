@@ -22,14 +22,18 @@
   .content-cards {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding: 3%;
+    justify-content: space-around;
+    width: 30%;
+    padding: 15px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    ul {
+      list-style: none;
+    }
   }
 }
 .content-cards:hover {
-  background-color: #ff701a;
+  background-color: #ff701a !important;
   color: white;
 }
 
@@ -115,9 +119,9 @@
     align-items: center;
     gap: 25px;
     justify-content: space-around;
-    transform: translateY(-8vh);
+    transform: translateY(-7vh);
     .content-cards {
-      width: 80%;
+      width: 90%;
     }
   }
 }
