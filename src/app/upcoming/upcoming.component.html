@@ -3,9 +3,11 @@
     <div class="events-card">
         <div class="event" *ngFor="let item of events">
             <img src="{{ item.image }}" class="event-img" alt="">
-            <h5>{{ item.name | uppercase }}</h5>
-            <div>{{ item.text }}</div>
-            <div>{{ item.date }}</div>
+            <div class="event-text">
+              <h5>{{ item.name | uppercase }}</h5>
+              <div>{{ item.text }}</div>
+              <div>{{ item.date }}</div>
+            </div>
         </div>
     </div>
 </div>
