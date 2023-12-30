@@ -1,43 +1,72 @@
 .about-us {
-    .container {
+  .container {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    .ganpatibappa-img {
+      .img {
+        width: 280px;
+        max-height: 300px;
+        height: 300px;
+        --color: #ff701a;
+        /* the border color */
+        --border: 5px;
+        /* the border thickness*/
+        --offset: 20px;
+        /* control the offset*/
+        --gap: 5px;
+        /* the gap on hover */
+
+        --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
+        --_o: calc(3*var(--offset));
+        padding:
+          calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+        background:
+          linear-gradient(var(--_c)) var(--_o) var(--_o),
+          linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+        background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+        background-repeat: no-repeat;
+        transition: .5s;
+        cursor: pointer;
+      }
+
+      img:hover {
+        background-position: 0px 0px;
+        background-size: calc(100% - 20px) calc(100% - 20px);
+        filter: grayscale(0);
+      }
+    }
+
+    .about-txt {
+      padding: 3%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+        animation: 3s anim-lineUp ease-out;
+      }
+
+      .heading {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        justify-content: space-between;
 
-        .ganpatibappa-img {
-            .img {
-                width: 280px;
-                max-height: 300px;
-                height: 300px;
-            }
+        .nav-pills {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
         }
-
-        .about-txt {
-            padding: 3%;
-            .about {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 13px;
-                animation: 3s anim-lineUp ease-out;
-            }
-
-            .heading {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                .nav-pills {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-
-                }
-            }
-        }
+      }
     }
+  }
 }
+
 .pills-link {
   line-height: 3;
   border: 1px solid white;
@@ -54,24 +83,25 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .about-us {
-        .container {
+  .about-us {
+    .container {
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
 
-            .waviy {
-                text-align: center;
-            }
-            .ganpatibappa-img {
-            .img {
-                width: 280px;
-                max-height: 300px;
-                height: 300px;
-            }
+      .waviy {
+        text-align: center;
+      }
+
+      .ganpatibappa-img {
+        .img {
+          width: 280px;
+          max-height: 300px;
+          height: 300px;
         }
-        }
+      }
     }
+  }
 }
