@@ -12,7 +12,6 @@ import { ServiceComponent } from './service/service.component';
 import { AchieveComponent } from './achieve/achieve.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

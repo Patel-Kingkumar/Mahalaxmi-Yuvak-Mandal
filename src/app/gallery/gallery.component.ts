@@ -72,7 +72,9 @@ export class GalleryComponent implements OnInit{
 
 
   onItemSelector(value: any) {
+    this.length = 3;
     this.select =  value;
+    this.hideBtn = true;
     if (this.select == "2023") {
       this.filterImages = this.images_2023;
     } else if (this.select == "2022") {
