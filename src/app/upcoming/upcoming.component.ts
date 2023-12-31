@@ -9,10 +9,10 @@ export class UpcomingComponent {
   year: any = new Date().getFullYear();
 
   events: any = [
-    { name: "Salgiri Mahotsav ", image: "assets/images/upcoming_event/salgiri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ચૈત્ર - વૈશાખ સાતમ-આઠમ", date: "30/04/2024 - 01/05/2024" },
-    { name: "Ganesh Mahotsav", image: "assets/images/upcoming_event/ganesh_mahotsav.jpg", text: "સંવત ૨૦૮૦ શ્રાવણ - ભાદરવો સુદ ચોથ", date: "07/09/2024 - 17/09/2424" },
-    { name: "Navratri Mahotsav", image: "assets/images/upcoming_event/navaratri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ભાદરવો - આસો સુદ પડવો", date: "03/10/2024 - 12/10/2024" },
-    { name: "Dahnu Padyatra", image: "assets/images/upcoming_event/dahnu_padyatra.jpg", text: "સંવત ૨૦૮૧ કારતક", date: "05/11/2023 - 09/11/2024" },
+    { name: "સાલગીરી મહોત્સવ ", image: "assets/images/upcoming_event/salgiri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ચૈત્ર - વૈશાખ સાતમ-આઠમ", date: "૩૦/૦૪/૨૦૨૪ - ૦૧/૦૫/૨૦૨૪" },
+    { name: "ગણેશ મહોત્સવ", image: "assets/images/upcoming_event/ganesh_mahotsav.jpg", text: "સંવત ૨૦૮૦ શ્રાવણ - ભાદરવો સુદ ચોથ", date: "૦૭/૦૯/૨૦૨૪ - ૧૭/૦૯/૨૦૨૪" },
+    { name: "નવરાત્રી મહોત્સવ", image: "assets/images/upcoming_event/navaratri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ભાદરવો - આસો સુદ પડવો", date: "૦૩/૧૦/૨૦૨૪ - ૧૨/૧૦/૨૦૨૪" },
+    { name: "દહાણુ  પદયાત્રા", image: "assets/images/upcoming_event/dahnu_padyatra.jpg", text: "સંવત ૨૦૮૧ કારતક", date: "૦૫/૧૧/૨૦૨૪ - ૦૯/૧૧/૨૦૨૪" },
   ]
 
 }
