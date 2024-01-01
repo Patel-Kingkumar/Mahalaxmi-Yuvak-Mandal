@@ -36,8 +36,6 @@ export class GalleryComponent implements OnInit{
     "assets/images/2021/ganeshchaturthi_one.jpg",
     "assets/images/2021/navaratri_one.jpg",
     "assets/images/2021/navaratri_three.jpg"
-
-
   ];
 
   images_2022: any = [

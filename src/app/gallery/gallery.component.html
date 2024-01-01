@@ -7,7 +7,6 @@
     </div>
     <div class="disp-images">
         <div class="container">
-
             <div *ngFor="let item of filterImages; let i = index">
               <img *ngIf="i < length || i > item.length - length" src="{{ item }}" class="lineUp" alt="">
               <div class="more-images-btn">
