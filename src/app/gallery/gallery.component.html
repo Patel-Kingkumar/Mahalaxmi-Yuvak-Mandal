@@ -8,7 +8,7 @@
     <div class="disp-images">
         <div class="container">
             <div *ngFor="let item of filterImages; let i = index">
-              <img *ngIf="i < length || i > item.length - length" src="{{ item }}" class="lineUp" alt="">
+              <img src="{{ item }}" class="lineUp" alt="" *ngIf="i < length || i > item.length - length">
               <div class="more-images-btn">
                 <button class="img-btn" *ngIf="i === length - 1 && hideBtn" (click)="loadMore(i)">
                   More Images

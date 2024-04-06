@@ -9,7 +9,7 @@ import { Component, Inject } from '@angular/core';
 export class FooterComponent {
 
   contactInfo: any = [
-    { icon: "fa-solid fa-phone", label: "+91 8009522111" },
+    { icon: "fa-solid fa-phone", label: "+91 9090909090" },
     { icon: "fa-solid fa-clock", label: "6:00 AM - 12:00 PM", label_two: "4:00 PM - 8:00 PM" },
     { icon: "fa-solid fa-bell", label: "Morning : 7:00 AM", label_two: "Evening : 7:00 PM" },
     { icon: "fa-solid fa-location-dot", label: "Mahalaxmi Temple, Dumas, Surat" }
