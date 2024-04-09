@@ -74,7 +74,9 @@
         .community-data {
             width: 25%;
             padding: 30px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            border-bottom: 15px solid #ff701a;
+            border-radius: 20px;
         }
     }
 }

@@ -21,7 +21,8 @@
       flex-wrap: wrap;
       width: 40%;
       padding: 3%;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 20px;
+      /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
       .cards-head {
         display: flex;
         flex-direction: row;
@@ -31,11 +32,21 @@
     .cards:hover {
       background-color: #ff701a;
       color: white;
+      border-left: none;
     }
     }
   }
 }
 
+
+.cards:nth-child(odd) {
+  border-left: 15px solid #ff701a;
+
+}
+.cards:nth-child(even) {
+  border-right: 15px solid #ff701a;
+
+}
 @media only screen and (max-width: 768px) {
   .services {
     display: flex;
