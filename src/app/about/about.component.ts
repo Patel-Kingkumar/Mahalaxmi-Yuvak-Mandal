@@ -13,7 +13,7 @@ export class AboutComponent {
     "Established by prominent figures in the Hindu community, our organization thrives under their leadership. They remain integral to our core values and operations, shaping our website's offerings and direction. Join us as we continue their legacy and share the richness of Hinduism with the world.",
     "Explore essential information and news on Hinduism through our premier website. Stay updated and delve into detailed insights about this ancient tradition. Join our community for a deeper understanding of Hinduism's richness."
   ]
-  text: any = this.description[0];
+  text: any = "Discover Hinduism's essentials and latest news under esteemed guidance, fostering a deeper connection within our vibrant community. Join us to delve into this ancient tradition and stay informed with our premier resources.";
 
   constructor() { }
 
