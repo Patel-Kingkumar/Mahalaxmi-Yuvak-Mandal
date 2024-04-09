@@ -72,14 +72,20 @@
         justify-content: space-around;
 
         .community-data {
-            width: 25%;
+          display: grid;
+          place-content: center;
+          width: 30%;
             padding: 30px;
+            margin-top: 30px;
             /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-            border-bottom: 15px solid #ff701a;
-            border-radius: 20px;
+            /* border-radius: 20px; */
+          }
         }
+      }
+
+      .community-data:nth-child(-n+2) {
+        border-right: 3px dotted #ff701a;
     }
-}
 
 .parallax-two {
     margin-top: 50px;
@@ -112,4 +118,9 @@
             }
         }
     }
+
+    .community-data:nth-child(-n+2) {
+      border-right: none;
+      border-bottom: 3px dotted #ff701a;
+  }
 }
