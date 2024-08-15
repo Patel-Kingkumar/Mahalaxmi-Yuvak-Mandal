@@ -1,4 +1,3 @@
-import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 @Component({
@@ -26,10 +25,5 @@ export class FooterComponent {
 
   reserveIcon: any = ["fa-brands fa-facebook-f", "fa-brands fa-twitter", "fa-brands fa-instagram", "fa-brands fa-whatsapp"];
 
-  constructor(@Inject(DOCUMENT) private dom: Document) { }
-
-  scrollToTop() {
-    this.dom.body.scrollTop = 0;
-    this.dom.documentElement.scrollTop = 0;
-  }
+  constructor() { }
 }

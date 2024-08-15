@@ -65,28 +65,32 @@ export class GalleryComponent implements OnInit{
 
   ngOnInit(): void {
     this.filterImages = this.allimages
+    this.visibleImages = this.filterImages.slice(0, 3);
   }
 
 
 
 
   onItemSelector(value: any) {
-    this.length = 3;
     this.select =  value;
     this.hideBtn = true;
     if (this.select == "2023") {
       this.visibleImages = this.images_2023;
+      this.visibleImages.length = 3;
     } else if (this.select == "2022") {
       this.visibleImages = this.images_2022;
+      this.visibleImages.length = 3;
     } else if (this.select == "2021") {
       this.visibleImages = this.images_2021;
+      this.visibleImages.length = 3;
     } else {
       this.visibleImages = this.allimages
+      this.visibleImages.length = 3;
     }
   }
 
   loadMore() {
-    const nextImages = this.filterImages.slice(this.visibleImages.length, this.visibleImages.length + this.length);
+    const nextImages = this.allimages.slice(this.visibleImages.length, this.visibleImages.length + this.length);
     this.visibleImages = [...this.visibleImages, ...nextImages];
     if (this.visibleImages.length == this.filterImages.length) {
       this.hideBtn = false;

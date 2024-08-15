@@ -9,7 +9,7 @@
       <div class="container">
         <div class="d-flex flex-row justify-content-center flex-wrap">
           <div class="d-flex flex-column mx-5" *ngFor="let item of visibleImages">
-            <img src="{{ item }}" class="lineUp my-3" alt="">
+            <img src="{{ item }}" class="lineUp my-3" loading="lazy" alt="">
           </div>
         </div>
         <div class="more-images-btn text-center" *ngIf="visibleImages != length - 1 && hideBtn">

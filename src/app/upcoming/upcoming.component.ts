@@ -7,12 +7,27 @@ import { Component } from '@angular/core';
 })
 export class UpcomingComponent {
   year: any = new Date().getFullYear();
+  today: Date = new Date();
+  leftDays: any;
 
+  constructor() {
+    this.calculateDaysUntilEvents();
+  }
   events: any = [
-    { name: "સાલગીરી મહોત્સવ ", image: "assets/images/upcoming_event/salgiri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ચૈત્ર - વૈશાખ સાતમ-આઠમ", date: "૩૦/૦૪/૨૦૨૪ - ૦૧/૦૫/૨૦૨૪" },
-    { name: "ગણેશ મહોત્સવ", image: "assets/images/upcoming_event/ganesh_mahotsav.jpg", text: "સંવત ૨૦૮૦ શ્રાવણ - ભાદરવો સુદ ચોથ", date: "૦૭/૦૯/૨૦૨૪ - ૧૭/૦૯/૨૦૨૪" },
-    { name: "નવરાત્રી મહોત્સવ", image: "assets/images/upcoming_event/navaratri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ભાદરવો - આસો સુદ પડવો", date: "૦૩/૧૦/૨૦૨૪ - ૧૨/૧૦/૨૦૨૪" },
-    { name: "દહાણુ  પદયાત્રા", image: "assets/images/upcoming_event/dahnu_padyatra.jpg", text: "સંવત ૨૦૮૧ કારતક", date: "૦૫/૧૧/૨૦૨૪ - ૦૯/૧૧/૨૦૨૪" },
+    { name: "સાલગીરી મહોત્સવ ", image: "assets/images/upcoming_event/salgiri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ચૈત્ર - વૈશાખ સાતમ-આઠમ", date: "30/04/2024 - 01/05/2024" },
+    { name: "ગણેશ મહોત્સવ", image: "assets/images/upcoming_event/ganesh_mahotsav.jpg", text: "સંવત ૨૦૮૦ શ્રાવણ - ભાદરવો સુદ ચોથ", date: "07/09/2024 - 17/09/2024" },
+    { name: "નવરાત્રી મહોત્સવ", image: "assets/images/upcoming_event/navaratri_mahotsav.jpg", text: "સંવત ૨૦૮૦ ભાદરવો - આસો સુદ પડવો", date: "03/10/2024 - 12/10/2024" },
+    { name: "દહાણુ  પદયાત્રા", image: "assets/images/upcoming_event/dahnu_padyatra.jpg", text: "સંવત ૨૦૮૧ કારતક", date: "05/11/2024 - 09/11/2024" },
   ]
 
+  calculateDaysUntilEvents() {
+    this.events.forEach((event: { date: { split: (arg0: string) => [any, any]; }; name: any; }) => {
+      const [startDateStr, endDateStr] = event.date.split(' - ');
+      const [day, month, year] = startDateStr.split('/').map(Number);
+      const eventDate = new Date(year, month - 1, day);
+      const timeDiff = eventDate.getTime() - this.today.getTime();
+      const daysUntilEvent = Math.ceil(timeDiff / (1000 * 3600 * 24));
+      console.log(`Event: ${event.name}, Days until event: ${daysUntilEvent}`);
+    });
+  }
 }
