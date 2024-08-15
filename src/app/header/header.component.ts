@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Input() selectedLanguage: string = 'English'; // Default language
 
+  onToggle(event: Event) {
+    const checkbox = event.target as HTMLInputElement;
+    this.selectedLanguage = checkbox.checked ? 'Hindi' : 'English';
+  }
 }

@@ -12,6 +12,7 @@ export class GalleryComponent implements OnInit{
   filterImages: any = "";
   length = 3;
   hideBtn: boolean = true;
+  visibleImages: any = "";
 
   allimages: any = [
     "assets/images/all/salgiri_one.jpg",
@@ -74,21 +75,20 @@ export class GalleryComponent implements OnInit{
     this.select =  value;
     this.hideBtn = true;
     if (this.select == "2023") {
-      this.filterImages = this.images_2023;
+      this.visibleImages = this.images_2023;
     } else if (this.select == "2022") {
-      this.filterImages = this.images_2022;
+      this.visibleImages = this.images_2022;
     } else if (this.select == "2021") {
-      this.filterImages = this.images_2021;
+      this.visibleImages = this.images_2021;
     } else {
-      this.filterImages = this.allimages
+      this.visibleImages = this.allimages
     }
   }
 
-  loadMore(len: number) {
-    this.length += 2;
-    console.log('filterImages  : ', this.filterImages.length);
-    console.log('len  : ', this.length);
-    if (this.length == this.filterImages.length) {
+  loadMore() {
+    const nextImages = this.filterImages.slice(this.visibleImages.length, this.visibleImages.length + this.length);
+    this.visibleImages = [...this.visibleImages, ...nextImages];
+    if (this.visibleImages.length == this.filterImages.length) {
       this.hideBtn = false;
     }
   }

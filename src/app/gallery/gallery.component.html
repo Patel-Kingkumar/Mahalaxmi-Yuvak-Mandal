@@ -6,16 +6,21 @@
         </div>
     </div>
     <div class="disp-images">
-        <div class="container">
-            <div *ngFor="let item of filterImages; let i = index">
-              <img src="{{ item }}" class="lineUp" alt="" *ngIf="i < length || i > item.length - length">
-              <div class="more-images-btn">
-                <button class="img-btn" *ngIf="i === length - 1 && hideBtn" (click)="loadMore(i)">
-                  More Images
-                </button>
-              </div>
-            </div>
+      <div class="container">
+        <div class="d-flex flex-row justify-content-center flex-wrap">
+          <div class="d-flex flex-column mx-5" *ngFor="let item of visibleImages">
+            <img src="{{ item }}" class="lineUp my-3" alt="">
+          </div>
         </div>
+        <div class="more-images-btn text-center" *ngIf="visibleImages != length - 1 && hideBtn">
+          <button class="img-btn" (click)="loadMore()">
+            More Images
+          </button>
+        </div>
+      </div>
+
+
+
     </div>
 
     <div>

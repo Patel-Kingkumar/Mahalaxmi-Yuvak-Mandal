@@ -10,7 +10,7 @@
 .disp-images {
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
