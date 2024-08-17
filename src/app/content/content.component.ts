@@ -31,4 +31,19 @@ export class ContentComponent {
       ]
     },
   ]
+  carouselItems = [
+    {
+      videoSrc: '../../assets/videos/salgiri_2023.mp4',
+      poster: '../../assets/videos/salgiri_2023.mp4',
+      title: 'Hinduism',
+      link: 'https://www.instagram.com/mahalaxmi_yuvak_mandal/'
+    },
+    {
+      videoSrc: '../../assets/videos/ganeshchaturthi_2023.mp4',
+      poster: '../../assets/videos/ganeshchaturthi_2023.mp4',
+      title: 'Hinduism',
+      link: 'https://www.instagram.com/mahalaxmi_yuvak_mandal/'
+    }
+    // Add more items as needed
+  ];
 }

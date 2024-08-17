@@ -21,13 +21,15 @@ export class UpcomingComponent {
   ]
 
   calculateDaysUntilEvents() {
-    this.events.forEach((event: { date: { split: (arg0: string) => [any, any]; }; name: any; }) => {
-      const [startDateStr, endDateStr] = event.date.split(' - ');
+    this.events.forEach((event: any) => {
+      const [startDateStr] = event.date.split(' - ');
       const [day, month, year] = startDateStr.split('/').map(Number);
-      const eventDate = new Date(year, month - 1, day);
+      const eventDate = new Date(year, month - 1, day); // Months are 0-based in JavaScript
+
       const timeDiff = eventDate.getTime() - this.today.getTime();
       const daysUntilEvent = Math.ceil(timeDiff / (1000 * 3600 * 24));
-      console.log(`Event: ${event.name}, Days until event: ${daysUntilEvent}`);
+
+      event.daysUntilEvent = daysUntilEvent;
     });
   }
 }
