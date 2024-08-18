@@ -96,12 +96,11 @@
     }
 
 .parallax-two {
-    margin-top: 50px;
-    /* background-image: url("../../assets/images/ganapati_bappa.png"); */
-    background-image: url("../../assets/images/parallax_two.jpeg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../../assets/images/parallax_two.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -160,7 +159,7 @@
 
 @media (max-width: 768px) {
   .parallax-one, .parallax-two {
-      background-attachment: scroll;
+      background-attachment: fixed;
       background-size: cover;
       background-position: center;
       height: auto;
