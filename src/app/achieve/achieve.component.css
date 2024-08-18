@@ -1,5 +1,6 @@
 .parallax-one {
-    background-image: url("../../assets/images/mahalaxmi_maa.png");
+    /* background-image: url("../../assets/images/mahalaxmi_maa.png"); */
+    background-image: url("../../assets/images/about_us.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -89,7 +90,8 @@
 
 .parallax-two {
     margin-top: 50px;
-    background-image: url("../../assets/images/ganapati_bappa.png");
+    /* background-image: url("../../assets/images/ganapati_bappa.png"); */
+    background-image: url("../../assets/images/about_us_2.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

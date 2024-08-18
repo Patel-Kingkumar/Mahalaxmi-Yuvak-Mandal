@@ -7,35 +7,14 @@
     gap: 50px;
     .ganpatibappa-img {
       .img {
-        width: 280px;
-        max-height: 300px;
-        height: 300px;
-        --color: #ff701a;
-        /* the border color */
-        --border: 5px;
-        /* the border thickness*/
-        --offset: 20px;
-        /* control the offset*/
-        --gap: 5px;
-        /* the gap on hover */
-
-        --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
-        --_o: calc(3*var(--offset));
-        padding:
-          calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
-        background:
-          linear-gradient(var(--_c)) var(--_o) var(--_o),
-          linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
-        background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
-        background-repeat: no-repeat;
-        transition: .5s;
-        cursor: pointer;
+        width: 550px;
+        max-height: 330px;
+        height: 330px;
       }
 
       img:hover {
         background-position: 0px 0px;
         background-size: calc(100% - 20px) calc(100% - 20px);
-        filter: grayscale(0);
       }
     }
 
