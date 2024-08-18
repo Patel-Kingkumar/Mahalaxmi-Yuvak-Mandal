@@ -92,7 +92,7 @@
     margin-top: 50px;
     /* background-image: url("../../assets/images/ganapati_bappa.png"); */
     background-image: url("../../assets/images/about_us_2.jpeg");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
 }
