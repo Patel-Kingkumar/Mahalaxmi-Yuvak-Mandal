@@ -15,85 +15,100 @@
 }
 
 .parallax-inner {
-    text-align: center;
-    padding: 10% 0;
+  text-align: center;
+  padding: 10% 0;
+  color: white;
+
+  a {
+    text-decoration: none;
     color: white;
-    button {
-        line-height: 2.5;
-        background: red;
-        color: white;
-        border: 1px solid red;
-        font-weight: 500;
-      }
-      button:hover {
-        background-color: #ff701a;
-        color: white;
-        border: 1px solid #ff701a;
-        font-weight: 500;
-        transition: all .3s ease-in-out;
-      }
-
-}
-  .nav * {
-    box-sizing: border-box;
-    transition: all .35s ease;
+    font-size: 3vw;
+    border-bottom: 3px solid white;
   }
 
-  .content {
-    text-align: center;
-    margin-top: 50px;
-    .review-card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 30px;
-    }
-    .reviews {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: 270px;
-      width: 25%;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-        .review-img {
-          width: 100px;
-          max-height: 200px;
-          object-fit: cover;
-        }
-    }
+  button {
+    line-height: 2.5;
+    background: red;
+    color: white;
+    border: 1px solid red;
+    font-weight: 500;
   }
-  .reviews:hover, .community-data:hover {
+
+  button:hover {
     background-color: #ff701a;
     color: white;
+    border: 1px solid #ff701a;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
   }
 
-.community {
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+
+  .review-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .reviews {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 50px;
-    .community-card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    height: 270px;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-        .community-data {
-          display: grid;
-          place-content: center;
-          width: 30%;
-            padding: 30px;
-            margin-top: 30px;
-            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-            /* border-radius: 20px; */
-          }
-        }
-      }
-
-      .community-data:nth-child(-n+2) {
-        border-right: 3px dotted #ff701a;
+    .review-img {
+      width: 100px;
+      max-height: 200px;
+      object-fit: cover;
     }
+  }
+}
+
+.reviews:hover,
+.community-data:hover {
+  background-color: #ff701a;
+  color: white;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+
+  .community-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .community-data {
+      display: grid;
+      place-content: center;
+      width: 30%;
+      padding: 30px;
+      margin-top: 30px;
+      /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+      /* border-radius: 20px; */
+    }
+  }
+}
+
+.community-data:nth-child(-n+2) {
+  border-right: 3px dotted #ff701a;
+}
 
 .parallax-two {
   background-image: url("../../assets/images/parallax_two.jpeg");
@@ -104,32 +119,35 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .review-card {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center;
-        gap: 25px;
-    }
-    .reviews {
-        width: 80% !important;
-    }
-    .community {
-        .community-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            .community-data {
-                width: 50%;
-                text-align: center;
-                padding: 30px;
-            }
-        }
-    }
+  .review-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 25px;
+  }
 
-    .community-data:nth-child(-n+2) {
-      border-right: none;
-      border-bottom: 3px dotted #ff701a;
+  .reviews {
+    width: 80% !important;
+  }
+
+  .community {
+    .community-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      .community-data {
+        width: 50%;
+        text-align: center;
+        padding: 30px;
+      }
+    }
+  }
+
+  .community-data:nth-child(-n+2) {
+    border-right: none;
+    border-bottom: 3px dotted #ff701a;
   }
 }
 
@@ -157,12 +175,18 @@
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  .parallax-one, .parallax-two {
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      height: auto;
-      padding: 20px 0;
+@media (max-width: 767px) {
+
+  .parallax-one,
+  .parallax-two {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+
+    /* background-image: url("../../assets/images/parallax_one.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px; */
   }
 }
