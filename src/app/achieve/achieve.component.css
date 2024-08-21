@@ -182,6 +182,7 @@
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    height: 70vh;
 
     /* background-image: url("../../assets/images/parallax_one.jpeg");
     background-attachment: fixed;

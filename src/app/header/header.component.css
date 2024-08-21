@@ -11,7 +11,6 @@
 .img-logo {
   width: 75px;
   height: 120px;
-  border-radius: 50%;
 }
 .menu {
   display: flex;
@@ -122,7 +121,6 @@ a:hover::before {
     width: 70px;
     height: 100px;
     float: left;
-    margin: 0 0 0 5%;
 }
   #menu-toggle ~ .menu li {
     height: 0;
