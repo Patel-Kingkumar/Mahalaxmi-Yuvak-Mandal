@@ -71,23 +71,26 @@ export class GalleryComponent implements OnInit{
 
 
 
-  onItemSelector(value: any) {
-    this.select =  value;
+  onItemSelector(event: any) {
+    const selectElement = event.target as HTMLSelectElement;
+    this.select = selectElement.value;
     this.hideBtn = true;
-    if (this.select == "2023") {
+  
+    if (this.select === "2023") {
       this.visibleImages = this.images_2023;
       this.visibleImages.length = 3;
-    } else if (this.select == "2022") {
+    } else if (this.select === "2022") {
       this.visibleImages = this.images_2022;
       this.visibleImages.length = 3;
-    } else if (this.select == "2021") {
+    } else if (this.select === "2021") {
       this.visibleImages = this.images_2021;
       this.visibleImages.length = 3;
     } else {
-      this.visibleImages = this.allimages
+      this.visibleImages = this.allimages;
       this.visibleImages.length = 3;
     }
   }
+  
 
   loadMore() {
     const nextImages = this.allimages.slice(this.visibleImages.length, this.visibleImages.length + this.length);

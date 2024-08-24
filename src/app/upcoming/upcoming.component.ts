@@ -24,11 +24,9 @@ export class UpcomingComponent {
     this.events.forEach((event: any) => {
       const [startDateStr] = event.date.split(' - ');
       const [day, month, year] = startDateStr.split('/').map(Number);
-      const eventDate = new Date(year, month - 1, day); // Months are 0-based in JavaScript
-
+      const eventDate = new Date(year, month - 1, day); 
       const timeDiff = eventDate.getTime() - this.today.getTime();
       const daysUntilEvent = Math.ceil(timeDiff / (1000 * 3600 * 24));
-
       event.daysUntilEvent = daysUntilEvent;
     });
   }

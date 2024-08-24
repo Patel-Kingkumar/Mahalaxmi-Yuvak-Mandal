@@ -19,7 +19,7 @@
       max-width: 250px;
       min-height: 300px;
       width: 100%;
-      height: auto;
+      height: 250px;
       /* width: 300px;
       max-height: 300px;
       height: 300px; */
@@ -30,14 +30,19 @@
   }
 }
 .year-btn, .img-btn:hover {
-  min-width: 10vw;
-  line-height: 3;
+  width: 25vw;
+  height: 30px;
   border: 1px solid white;
   color: white;
   background-color: #ff701a;
 }
 
-.year-btn:hover, .img-btn {
+.year-options {
+  background-color: white;
+  color: #ff701a;
+}
+
+.img-btn {
   min-width: 10vw;
   line-height: 3;
   color: #151515;
@@ -81,8 +86,13 @@
     align-items: center;
     flex-wrap: wrap;
     img {
-      max-height: 300px;
-      height: 300px;
+      width: 200px !important;
+      height: 200px !important;
+      min-height: 200px !important;
+      max-height: 200px !important;
     }
+  }
+  .year-btn {
+    width: 45vw !important;
   }
 }
