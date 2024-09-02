@@ -78,11 +78,11 @@
   }
 }
 
-.reviews:hover,
+/* .reviews:hover,
 .community-data:hover {
   background-color: #ff701a;
   color: white;
-}
+} */
 
 .community {
   display: flex;

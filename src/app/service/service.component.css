@@ -22,7 +22,8 @@
       width: 40%;
       padding: 3%;
       border-radius: 20px;
-      /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
       .cards-head {
         display: flex;
         flex-direction: row;
@@ -33,6 +34,7 @@
       background-color: #ff701a;
       color: white;
       border-left: none;
+      /* transform: scale(1.05); */
     }
     }
   }
@@ -40,10 +42,12 @@
 
 
 .cards:nth-child(odd) {
+  border-top: 9px solid #ff701a;
   border-left: 9px solid #ff701a;
 
 }
 .cards:nth-child(even) {
+  border-bottom: 9px solid #ff701a;
   border-right: 9px solid #ff701a;
 
 }
