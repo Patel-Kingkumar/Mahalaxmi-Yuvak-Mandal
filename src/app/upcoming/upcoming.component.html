@@ -10,9 +10,13 @@
       <div class="event-text">
         <h5>{{ item.name | uppercase }}</h5>
         <div>{{ item.text }}</div>
-        <div>{{ item.date }}</div>
+        <div>
+          <span>{{ item.startDate }}</span>
+          <span *ngIf="item.endDate"> - {{ item.endDate }}</span>
+        </div>
         <div *ngIf="item.daysUntilEvent >= 0">Days to go : {{ item.daysUntilEvent }}</div>
-        <div *ngIf="item.daysUntilEvent < 0">This religious event is over.</div>
+        <div *ngIf="isEventOver(item.startDate, item.endDate)">This religious event is over.</div>
+        <div *ngIf="isTodayBetween(item.startDate, item.endDate)">We celebrating this religious event.</div>
       </div>
     </div>
   </div>
