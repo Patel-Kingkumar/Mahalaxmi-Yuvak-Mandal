@@ -26,4 +26,20 @@ export class FooterComponent {
   reserveIcon: any = ["fa-brands fa-facebook-f", "fa-brands fa-twitter", "fa-brands fa-instagram", "fa-brands fa-whatsapp"];
 
   constructor() { }
+
+  getTooltipText(item: string): string {
+    switch (item) {
+      case 'fa-brands fa-facebook-f':
+        return 'Facebook';
+      case 'fa-brands fa-twitter':
+        return 'Twitter';
+      case 'fa-brands fa-instagram':
+        return 'Instagram';
+      case 'fa-brands fa-whatsapp':
+        return 'WhatsApp';
+      default:
+        return '';
+    }
+  }
+  
 }

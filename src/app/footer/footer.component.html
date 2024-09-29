@@ -36,17 +36,19 @@
     </div>
     <div class="reserve">
         <div class="reserve-items">
-          <div class="icons" *ngFor="let item of reserveIcon" [ngStyle]="{
-            'background': item === 'fa-brands fa-facebook-f' ? '#316ff6' :
-                                  item === 'fa-brands fa-twitter' ? '#1da1f2' :
-                                  item === 'fa-brands fa-instagram' ? 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)' :
-                                  item === 'fa-brands fa-whatsapp' ? '#25d366' :
-                                  '#030a20'
-          }">
-                <a class="icon-link">
-                    <i class="{{ item }}"></i>
-                </a>
-            </div>
+            <div class="icons" *ngFor="let item of reserveIcon" [ngStyle]="{
+                'background': item === 'fa-brands fa-facebook-f' ? '#316ff6' :
+                              item === 'fa-brands fa-twitter' ? '#1da1f2' :
+                              item === 'fa-brands fa-instagram' ? 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)' :
+                              item === 'fa-brands fa-whatsapp' ? '#25d366' :
+                              '#030a20'
+              }">
+            <a class="icon-link">
+                <i class="{{ item }}"></i>
+                <span class="tooltip">{{ getTooltipText(item) }}</span> <!-- Tooltip text -->
+            </a>
+        </div>
+        
         </div>
         <div>© 2024 Mahalaxmi Yuvak Mandal, Dumas, Surat.<br> All rights reserved</div>
     </div>
