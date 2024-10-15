@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit{
 
-  years: any = ["All", "2023", "2022", "2021"];
+  years: any = ["All", "2024", "2023", "2022", "2021"];
   select: any = "all";
   filterImages: any = "";
   length = 3;
@@ -24,6 +24,19 @@ export class GalleryComponent implements OnInit{
     "assets/images/all/navaratri_one.jpg",
     "assets/images/all/navaratri_two.jpg",
     "assets/images/all/navaratri_three.jpg"
+  ];
+
+  images_2024: any = [
+    "assets/images/2024/salgiri_one.jpeg",
+    "assets/images/2024/ganeshchaturthi_one.jpeg",
+    "assets/images/2024/navaratri_one.jpeg",
+    "assets/images/2024/salgiri_one.jpeg",
+    "assets/images/2024/ganeshchaturthi_one.jpeg",
+    "assets/images/2024/navaratri_one.jpeg",
+    "assets/images/2024/salgiri_one.jpeg",
+    "assets/images/2024/ganeshchaturthi_one.jpeg",
+    "assets/images/2024/navaratri_one.jpeg",
+    "assets/images/2024/navaratri_three.jpeg"
   ];
 
   images_2023: any = [
@@ -76,7 +89,10 @@ export class GalleryComponent implements OnInit{
     this.select = selectElement.value;
     this.hideBtn = true;
   
-    if (this.select === "2023") {
+    if (this.select === "2024") {
+      this.visibleImages = this.images_2024;
+      this.visibleImages.length = 3;
+    } else if (this.select === "2023") {
       this.visibleImages = this.images_2023;
       this.visibleImages.length = 3;
     } else if (this.select === "2022") {
