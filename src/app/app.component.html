@@ -7,3 +7,6 @@
 <app-upcoming id="upcoming"></app-upcoming>
 <app-footer id="footer"></app-footer>
 <button (click)="scrollToTop()" class="btn-top" *ngIf="displayDiv"><i class="fas fa-long-arrow-alt-up"></i></button>
+<div class="custom-toast" *ngIf="toastVisible" [ngStyle]="toastPosition">
+    Content is protected!
+</div>

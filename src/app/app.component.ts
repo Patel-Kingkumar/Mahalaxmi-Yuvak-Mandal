@@ -24,28 +24,39 @@ export class AppComponent implements OnInit {
       this.displayDiv = false;
     }
  }
-  scrollToTop() {
-    this.dom.body.scrollTop = 0;
-    this.dom.documentElement.scrollTop = 0;
+ scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+toastVisible: boolean = false;
+  toastPosition = { top: '0px', left: '0px' };
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const target = event.target as HTMLElement;
+    if (this.isTextElement(target)) {
+      this.showWarningToast(event.clientX, event.clientY);
+    }
   }
 
-  // @HostListener('document:click', ['$event'])
-  // onDocumentClick(event: MouseEvent): void {
-  //   const target = event.target as HTMLElement;
-  //   if (this.isTextElement(target)) {
-  //     this.showWarningToast();
-  //   }
-  // }
+  private isTextElement(target: HTMLElement): boolean {
+    const textElements = ['P', 'SPAN', 'DIV', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'A', 'LI'];
+    return textElements.includes(target.tagName);
+  }
 
-  // private isTextElement(target: HTMLElement): boolean {
-  //   const textElements = ['P', 'SPAN', 'DIV', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'A', 'LI'];
-  //   return textElements.includes(target.tagName);
-  // }
-
-  // showWarningToast(): void {
-  //   this.toastr.info('Content is protected!', 'Info', {
-  //     progressBar: true,
-  //   });
-  // }
+  showWarningToast(x: number, y: number): void {
+    this.toastPosition = {
+      top: `${y}px`,
+      left: `${x}px`
+    };
+    this.toastVisible = true;
+    setTimeout(() => {
+      this.toastVisible = false;
+    }, 3000);
+  }
   
 }
