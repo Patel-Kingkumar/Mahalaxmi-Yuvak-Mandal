@@ -14,6 +14,7 @@ import { ServiceComponent } from './service/service.component';
 import { AchieveComponent } from './achieve/achieve.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { FooterComponent } from './footer/footer.component';
+import { QuestioinAnswerComponent } from './questioin-answer/questioin-answer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     ServiceComponent,
     AchieveComponent,
     UpcomingComponent,
-    FooterComponent
+    FooterComponent,
+    QuestioinAnswerComponent
   ],
   imports: [
     BrowserModule,

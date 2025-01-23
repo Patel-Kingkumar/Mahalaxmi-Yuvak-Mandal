@@ -1,0 +1,11 @@
+<div class="container accordion">
+    <h1>FAQ</h1>
+    <div class="accordion-item" *ngFor="let item of allQuestionsAnswers; let i = index">
+        <input type="checkbox" [id]="'accordion' + i">
+        <label [for]="'accordion' + i" class="accordion-item-title">
+            <span class="icon"></span>
+            {{ item.question }}
+        </label>
+        <div class="accordion-item-desc">{{ item.answer }}</div>
+    </div>
+</div>
