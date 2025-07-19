@@ -8,12 +8,16 @@
     margin-top: 30px;
 
     .event {
+      border-radius: 10px;
       width: 18%;
       /* height: 400px; */
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       gap: 20px;
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
       .event-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         width: 100%;
         height: 250px;
         min-height: 200px;
@@ -33,6 +37,7 @@
 }
 
 .event:hover {
+  transform: scale(1.1);
   background-color: #ff701a;
   color: white;
 }
