@@ -1,0 +1,25 @@
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff6600;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  border-radius: 50%;
+  border: 0;
+}
+
+.custom-toast {
+  position: fixed;
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}

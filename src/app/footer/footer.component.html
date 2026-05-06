@@ -1,0 +1,55 @@
+
+<div class="main">
+    <div class="footer">
+        <div class="image">
+            <!-- <img src="../../assets/images/hindulism.png" class="logo-img" alt=""> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.8345299645952!2d72.70531449962787!3d21.09726723563443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be1ad2a33943d21%3A0xeb2d95d4b0d9f35c!2sMahalakshmi%20Temple!5e1!3m2!1sen!2sin!4v1712636741455!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        <div class="contact-us">
+            <div>
+                <h3>CONTACT US</h3>
+            </div>
+            <div class="contact-info" *ngFor="let item of contactInfo">
+                <i class="{{ item.icon }}"></i>
+                <div class="time text-start">
+                  <label>{{ item.label }}</label>
+                  <label>{{ item.label_two }}</label>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main-links">
+            <div>
+                <h3>Main Link</h3>
+            </div>
+            <div *ngFor="let item of mainInfo">
+                <a href="#">{{ item }}</a>
+            </div>
+        </div> -->
+        <div class="more-info">
+            <div>
+                <h3>MAIN LINKS</h3>
+            </div>
+            <div *ngFor="let item of moreInfo">
+                <a href="#{{ item.redirect }}" class="more-link">{{ item.name }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="reserve">
+        <div class="reserve-items">
+            <div class="icons" *ngFor="let item of reserveIcon" [ngStyle]="{
+                'background': item === 'fa-brands fa-facebook-f' ? '#316ff6' :
+                              item === 'fa-brands fa-twitter' ? '#1da1f2' :
+                              item === 'fa-brands fa-instagram' ? 'linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)' :
+                              item === 'fa-brands fa-whatsapp' ? '#25d366' :
+                              '#030a20'
+              }">
+            <a class="icon-link">
+                <i class="{{ item }}"></i>
+                <span class="tooltip">{{ getTooltipText(item) }}</span>
+            </a>
+        </div>
+        
+        </div>
+        <div>© 2024 Mahalaxmi Yuvak Mandal, Dumas, Surat.<br> All rights reserved</div>
+    </div>
+</div>

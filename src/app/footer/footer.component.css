@@ -1,0 +1,194 @@
+.main {
+  background-color: #061030;
+  margin-top: 50px;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 75px;
+    iframe {
+      border-radius: 15px;
+    }
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+      .contact-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+      }
+      .time {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    /* .main-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ff6600;
+      }
+    } */
+
+    .more-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+
+      .more-link {
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+      .more-link:hover {
+        color: #ff6600;
+      }
+    }
+  }
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  /* background-color: #ff6600; */
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+  .reserve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* background-color: #030a20; */
+    padding: 25px 0;
+    .reserve-items {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      .icons {
+        /* border: 1px solid white; */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 24px;
+        .icon-link {
+          color: white;
+          text-decoration: none;
+          i {
+            line-height: 2;
+          }
+        }
+      }
+      .icons:hover {
+        /* background-color: #ff6600;
+        border: 1px solid #ff6600; */
+      }
+        .icon-link:hover {
+          transition: all .3s ease-in;
+        }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 686px) {
+
+  .reserve {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px;
+
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  iframe {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px;
+    .contact-us {
+      text-align: center;
+    }
+  }
+}
+
+
+.icons {
+  position: relative; /* Keep as is */
+
+  .icon-link {
+    color: white;
+    text-decoration: none;
+    position: relative; /* Keep as is */
+
+    /* Tooltip styles */
+    .tooltip {
+      visibility: hidden;
+      width: 120px; /* Adjust width */
+      background-color: black; /* Background color */
+      color: #fff; /* Text color */
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the icon */
+      left: 50%;
+      margin-left: -60px; /* Center the tooltip */
+      opacity: 0; /* Hide tooltip */
+      transition: opacity 0.3s; /* Fade effect */
+      
+      /* Arrow */
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%; /* Position at the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px; /* Center the arrow */
+        border-width: 5px; /* Size of the arrow */
+        border-style: solid;
+        border-color: black transparent transparent transparent; /* Arrow color */
+      }
+    }
+
+    /* Show the tooltip on hover */
+    &:hover .tooltip {
+      visibility: visible;
+      opacity: 1; /* Show tooltip */
+    }
+  }
+}
