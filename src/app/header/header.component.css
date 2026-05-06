@@ -110,7 +110,7 @@ a:hover::before {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 88px;
+    margin-top: 45px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -149,3 +149,6 @@ a:hover::before {
     border-bottom: 1px solid #444;
   }
 }
+ 
+
+ 

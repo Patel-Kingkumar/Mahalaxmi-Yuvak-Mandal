@@ -1,8 +1,20 @@
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
-    <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
-      <video class="remoteVideo" loop muted autoplay preload="auto" oncanplay="this.play()"
-        onloadedmetadata="this.muted = true" [poster]="item.poster">
+    <div
+      *ngFor="let item of carouselItems; let i = index"
+      class="carousel-item"
+      [ngClass]="{ active: i === 0 }"
+    >
+      <video
+        class="remoteVideo"
+        loop
+        muted
+        autoplay
+        preload="auto"
+        oncanplay="this.play()"
+        onloadedmetadata="this.muted = true"
+        [poster]="item.poster"
+      >
         <source [src]="item.videoSrc" type="video/mp4" />
       </video>
       <div class="carousel-content">
@@ -13,17 +25,27 @@
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExample"
+    data-bs-slide="prev"
+  >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExample"
+    data-bs-slide="next"
+  >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
 
-<div class="main-contents">
+<!-- <div class="main-contents">
     <div class="container">
         <div class="contents">
             <div class="content-data">
@@ -36,4 +58,4 @@
           </div>
       </div>
   </div>
-</div>
+</div> -->
